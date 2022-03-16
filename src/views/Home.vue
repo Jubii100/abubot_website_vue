@@ -21,7 +21,10 @@
               <div class="card-body">
                 <h5 class="card-title">{{ product.name }}</h5>
                 <p class="card-text">{{ product.description }}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                <router-link v-bind:to="product.get_absolute_url" class="btn"
+                  >View Details</router-link
+                >
               </div>
             </div>
           </div>
